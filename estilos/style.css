@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@100&family=Rubik+Dirt&display=swap');
 
 * {
     margin: 0;
     padding: 0;
 }
 
-.titulo {
+.titulo{
     display: flex;
     flex-direction: row;
     color: rgb(6, 13, 26);
@@ -14,10 +14,17 @@
     border: 15px solid black;
     background-color: aquamarine;
     font-family: 'Roboto', sans-serif;
+    background: rgb(253, 253, 255);
+    background: linear-gradient(180deg, rgba(253, 253, 255, 1) 0%, rgba(56, 56, 179, 1) 26%, rgba(8, 202, 241, 1) 86%);
+
 }
 .imagenescentricas{
     display: flex;
     justify-content: flex-start;
+   
+}
+.imagenescentricas img{
+    border-radius: 80px;
 }
 
 .imagenprincipal {
@@ -37,32 +44,15 @@ h2 {
     color: rgb(226, 234, 252);
 }
 
-p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
-    font-style: normal;
-    font-size: 18px;
-    text-align: justify;
-    line-height: 31px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    word-spacing: 5px;
-    padding: 40px;
-    border: 10px solid rgb(135, 150, 6);
-    margin-right: 400px;
-    margin-top: 60px;
-    margin-left: 60px;
-}
-
 header {
     background-color: rgb(44, 9, 240);
-    padding: 80px;
+    padding: 0px;
     margin-top: 0;
 }
 
 footer {
-    padding: 45px;
-    background-color: rgb(192, 226, 43);
+    padding: 1px;
+    margin: -8px;
 
 
 }
@@ -70,6 +60,12 @@ footer {
 h2 {
     font-family: Impact,'Arial Narrow Bold', sans-serif;
     color: blue;
+}
+h3{
+    font-size: 16px;
+}
+h4{
+    font-size: 16px;
 }
 
 .creditos{
@@ -92,8 +88,8 @@ a {
 }
 
 img {
-    margin-top: 45px;
-    margin-left: 150px;
+    margin-top: 14px;
+    margin-left: 7px;
 }
 
 .flexContainer {
@@ -104,28 +100,10 @@ img {
     align-items: center;
 }
 
-div {
-    background-color: brown;
-    padding: 30px;
-    margin: 10px;
-}
-
-nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    color: black;
-    list-style-type: none;
-}
 
 .icon {
     width: 48px;
     height: 48px;
-}
-
-body {
-    background: rgb(253, 253, 255);
-    background: linear-gradient(180deg, rgba(253, 253, 255, 1) 0%, rgba(56, 56, 179, 1) 26%, rgba(8, 202, 241, 1) 86%);
 }
 
 .containerGrids{
@@ -137,9 +115,7 @@ body {
     'footer footer footer';
 }
 .containerGrids div{
-    background-color: rgba(0, 255, 64, 0.651);
     text-align: center;
-    border: 1px solid black;
 }
 .item1{
     grid-column: 1/3;
@@ -148,8 +124,15 @@ grid-area: header;
 
 .item2{
 grid-area: main;
-display: flex;
-flex-wrap: wrap;
+display: grid;
+
+}
+main{
+    margin: 223px;
+    padding: 17px;
+    margin-top: 10px;
+    margin-right: 253px;
+    margin-bottom: 7px;
 }
 
 .item3{
@@ -178,22 +161,6 @@ padding: 5px;
     flex: 25%;
     padding: 5px;
 }
-
-@media all and (min-width: 768px){
-.portada{
-    background: rgb(253,253,255);
-    background: linear-gradient(180deg, rgba(253,253,255,1) 0%, rgba(56,179,163,1) 26%, rgba(8,202,241,1) 86%);
-}
-.div{
-    background-color: aqua ;
-}
-}
-
-@media all and (min-width: 1200px){
-
-}
-
-  
   @media only screen and (max-width: 600px) {
     body {
       background-color: lightblue;
@@ -206,3 +173,48 @@ padding: 5px;
         flex-direction: column;
         }
   }
+  .navbar-collapse{
+display: flex;
+flex-direction: row-reverse;
+}
+.altura{
+    height: 37rem;
+}
+.prueba{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 40px;
+    transition: color 2s, background-color 3s;
+}
+.prueba:hover{
+color: darkviolet;
+background-color: darkorange;
+}
+.column1{
+    background-color: rgba(96, 244, 244, 0.637);
+transition: background-color 9s, width 3s, height 3s;
+}
+
+.column1:hover{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+}
+.column2{
+    background-color: rgba(96, 244, 244, 0.637);
+transition: background-color 9s, width 3s, height 3s;
+}
+
+.column2:hover{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+}
+.column3{
+    background-color: rgba(96, 244, 244, 0.637);
+transition: background-color 9s, width 3s;
+}
+
+.column3:hover{
+    background-color: green;
+    width: 80%;
+}
