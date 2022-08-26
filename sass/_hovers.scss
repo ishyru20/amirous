@@ -1,0 +1,38 @@
+.prueba{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 40px;
+    transition: color 2s, background-color 3s;
+    &:hover{
+color: darkviolet;
+background-color: darkorange;
+}
+}
+
+.column1{
+    background-color: rgba(96, 244, 244, 0.637);
+transition: background-color 9s, width 3s, height 3s;
+&:hover{
+    background-color: green;
+    width: 70%;
+    height: 70%;
+}
+}
+
+
+.row{
+    background-color: rgba(96, 244, 244, 0.637);
+transition: background-color 9s, width 3s, height 3s;
+&:hover{
+    background-color: green;
+}
+}
+
+
+.galery{
+    color: rgba(114, 43, 43, 0.788);
+    &:hover{
+    display: grid;
+    justify-content: end;
+   
+}
+}

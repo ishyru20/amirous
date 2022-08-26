@@ -1,9 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@100&family=Rubik+Dirt&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-}
+@import "fuentes";
+@import "generales";
+@import "hovers";
 
 .titulo{
     display: flex;
@@ -44,18 +41,6 @@ h2 {
     color: rgb(226, 234, 252);
 }
 
-header {
-    background-color: rgb(44, 9, 240);
-    padding: 0px;
-    margin-top: 0;
-}
-
-footer {
-    padding: 1px;
-    margin: -8px;
-
-
-}
 
 h2 {
     font-family: Impact,'Arial Narrow Bold', sans-serif;
@@ -127,13 +112,6 @@ grid-area: main;
 display: grid;
 
 }
-main{
-    margin: 223px;
-    padding: 17px;
-    margin-top: 10px;
-    margin-right: 253px;
-    margin-bottom: 7px;
-}
 
 .item3{
 grid-area: footer;
@@ -179,42 +157,4 @@ flex-direction: row-reverse;
 }
 .altura{
     height: 37rem;
-}
-.prueba{
-    font-family: 'Source Code Pro', monospace;
-    font-size: 40px;
-    transition: color 2s, background-color 3s;
-}
-.prueba:hover{
-color: darkviolet;
-background-color: darkorange;
-}
-.column1{
-    background-color: rgba(96, 244, 244, 0.637);
-transition: background-color 9s, width 3s, height 3s;
-}
-
-.column1:hover{
-    background-color: green;
-    width: 100px;
-    height: 100px;
-}
-.column2{
-    background-color: rgba(96, 244, 244, 0.637);
-transition: background-color 9s, width 3s, height 3s;
-}
-
-.column2:hover{
-    background-color: green;
-    width: 100px;
-    height: 100px;
-}
-.column3{
-    background-color: rgba(96, 244, 244, 0.637);
-transition: background-color 9s, width 3s;
-}
-
-.column3:hover{
-    background-color: green;
-    width: 80%;
 }
