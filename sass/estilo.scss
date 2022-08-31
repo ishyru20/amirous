@@ -1,7 +1,7 @@
 @import "fuentes";
 @import "generales";
 @import "hovers";
-
+@import "variables";
 .titulo{
     display: flex;
     flex-direction: row;
@@ -12,8 +12,6 @@
     background-color: aquamarine;
     font-family: 'Roboto', sans-serif;
     background: rgb(253, 253, 255);
-    background: linear-gradient(180deg, rgba(253, 253, 255, 1) 0%, rgba(56, 56, 179, 1) 26%, rgba(8, 202, 241, 1) 86%);
-
 }
 .imagenescentricas{
     display: flex;
@@ -31,23 +29,22 @@
 }
 
 .subtitulo {
-    color: blue;
+    color: rgb(101, 219, 22);
     font-size: 25px;
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
 }
 
 h2 {
-    color: rgb(226, 234, 252);
+    color: rgb(44, 201, 38);
     font-family: Impact,'Arial Narrow Bold', sans-serif;
     color: blue;
 }
 
-h3{
+.derechos{
+    @extend .subtitulo;
     font-size: 16px;
-}
-h4{
-    font-size: 16px;
+
 }
 
 .creditos{
@@ -60,13 +57,6 @@ a {
     padding: 20px;
     color: aliceblue;
 
-}
-
-.estudiomoderno {
-    margin-top: 80px;
-    margin-left: 200px;
-    border-radius: 10px;
-    border: 10px double blueviolet;
 }
 
 img {
@@ -91,7 +81,7 @@ img {
 .containerGrids{
     display: grid;
     background: rgb(253, 253, 255);
-    background: linear-gradient(180deg, rgba(253, 253, 255, 1) 0%, rgba(56, 56, 179, 1) 26%, rgba(8, 202, 241, 1) 86%);
+    background-color: azure;
     grid-template-areas: 'header header header'
     'main main main'
     'footer footer footer';
@@ -154,4 +144,13 @@ flex-direction: row-reverse;
 }
 .altura{
     height: 37rem;
+}
+@mixin sizes ($width, $height){
+height: $height;
+width:$width;
+}
+
+.derechos2{
+    @include sizes (500px, 80px);
+background-color: blueviolet;
 }
