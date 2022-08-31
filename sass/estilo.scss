@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@100&family=Rubik+Dirt&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
+@import "fuentes";
+@import "generales";
+@import "hovers";
+@import "variables";
 .titulo{
     display: flex;
     flex-direction: row;
@@ -15,8 +12,6 @@
     background-color: aquamarine;
     font-family: 'Roboto', sans-serif;
     background: rgb(253, 253, 255);
-    background: linear-gradient(180deg, rgba(253, 253, 255, 1) 0%, rgba(56, 56, 179, 1) 26%, rgba(8, 202, 241, 1) 86%);
-
 }
 .imagenescentricas{
     display: flex;
@@ -34,38 +29,22 @@
 }
 
 .subtitulo {
-    color: blue;
+    color: rgb(101, 219, 22);
     font-size: 25px;
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
 }
 
 h2 {
-    color: rgb(226, 234, 252);
-}
-
-header {
-    background-color: rgb(44, 9, 240);
-    padding: 0px;
-    margin-top: 0;
-}
-
-footer {
-    padding: 1px;
-    margin: -8px;
-
-
-}
-
-h2 {
+    color: rgb(44, 201, 38);
     font-family: Impact,'Arial Narrow Bold', sans-serif;
     color: blue;
 }
-h3{
+
+.derechos{
+    @extend .subtitulo;
     font-size: 16px;
-}
-h4{
-    font-size: 16px;
+
 }
 
 .creditos{
@@ -78,13 +57,6 @@ a {
     padding: 20px;
     color: aliceblue;
 
-}
-
-.estudiomoderno {
-    margin-top: 80px;
-    margin-left: 200px;
-    border-radius: 10px;
-    border: 10px double blueviolet;
 }
 
 img {
@@ -109,7 +81,7 @@ img {
 .containerGrids{
     display: grid;
     background: rgb(253, 253, 255);
-    background: linear-gradient(180deg, rgba(253, 253, 255, 1) 0%, rgba(56, 56, 179, 1) 26%, rgba(8, 202, 241, 1) 86%);
+    background-color: azure;
     grid-template-areas: 'header header header'
     'main main main'
     'footer footer footer';
@@ -126,13 +98,6 @@ grid-area: header;
 grid-area: main;
 display: grid;
 
-}
-main{
-    margin: 223px;
-    padding: 17px;
-    margin-top: 10px;
-    margin-right: 253px;
-    margin-bottom: 7px;
 }
 
 .item3{
@@ -180,41 +145,12 @@ flex-direction: row-reverse;
 .altura{
     height: 37rem;
 }
-.prueba{
-    font-family: 'Source Code Pro', monospace;
-    font-size: 40px;
-    transition: color 2s, background-color 3s;
-}
-.prueba:hover{
-color: darkviolet;
-background-color: darkorange;
-}
-.column1{
-    background-color: rgba(96, 244, 244, 0.637);
-transition: background-color 9s, width 3s, height 3s;
+@mixin sizes ($width, $height){
+height: $height;
+width:$width;
 }
 
-.column1:hover{
-    background-color: green;
-    width: 100px;
-    height: 100px;
-}
-.column2{
-    background-color: rgba(96, 244, 244, 0.637);
-transition: background-color 9s, width 3s, height 3s;
-}
-
-.column2:hover{
-    background-color: green;
-    width: 100px;
-    height: 100px;
-}
-.column3{
-    background-color: rgba(96, 244, 244, 0.637);
-transition: background-color 9s, width 3s;
-}
-
-.column3:hover{
-    background-color: green;
-    width: 80%;
+.derechos2{
+    @include sizes (500px, 80px);
+background-color: blueviolet;
 }
